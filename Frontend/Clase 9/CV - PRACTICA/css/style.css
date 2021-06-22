@@ -1,0 +1,26 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}
+header {
+  background-color: #E6E6E6;
+  text-align: center;
+}
+
+h1,
+h2 {
+  background-color: #C4C4C4;
+}
+
+main {
+  width:1041px;
+  height:460px;
+  display:inline-block;
+  text-align: start;
+}
+
+.lista {
+  list-style:none;
+}
