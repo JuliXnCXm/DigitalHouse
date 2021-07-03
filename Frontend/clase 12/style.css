@@ -38,7 +38,7 @@ body {
 }
 .container {
   width:100%;
-  height:500px;
+  height:auto;
 }
 .container img {
   display: flex;
@@ -72,7 +72,8 @@ body {
 .main-header {
   display:flex;
   flex-direction: column;
-  align-items:center
+  align-items:center;
+  font-size: 1em;
 }
 .main-header ol,li ,a {
   display: flex;
@@ -95,7 +96,7 @@ body {
   color:#F0A83E;
 }
 .contact {
-  width: 500px;
+  width: 400px;
   display: flex;
   margin:auto;
   flex-direction: column;
@@ -149,7 +150,7 @@ footer {
   text-align: center;
 }
 .first-footer h2 {
-  font-size:20px;
+  font-size:1em;
 }
 
 .first-footer img {
@@ -195,4 +196,43 @@ footer {
   width: 100%;
   font-size:10px;
   justify-content: center;
+}
+
+@media (max-width:400px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  } 
+  .main-header {
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content: center;
+  }
+  .head ul {
+    display: none;
+  }
+  .container {
+    height:200px
+  }
+  .container-text {
+    bottom: 153px;
+    left: 14%;
+  }
+  .container-text h1, .container-text p{
+    font-size:0.8em;
+  }
+  
+  .carrusel{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  /* .contact {
+    position: fixed;
+  } */
+  .first-footer div h2{
+    font-size:10px
+  }
 }
